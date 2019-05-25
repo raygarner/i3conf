@@ -26,14 +26,21 @@ font pango:monospace 8
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+<<<<<<< HEAD
 #printscreen
 bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots/'
 
+=======
+>>>>>>> aaa427f3e3eb0b3aae9448729ba2979e85f2f5ab
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
+<<<<<<< HEAD
 bindsym $mod+Return exec st
+=======
+bindsym $mod+Return exec st -f 'Liberation Mono-19' 
+>>>>>>> aaa427f3e3eb0b3aae9448729ba2979e85f2f5ab
 # kill focused window
 bindsym $mod+Shift+x kill
 
@@ -45,6 +52,7 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 #launch firefox
+<<<<<<< HEAD
 bindsym $mod+Shift+f exec uzbl-tabbed
 
 #launch pavucontrol
@@ -55,6 +63,15 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+=======
+bindsym $mod+Shift+f exec firefox 
+
+# change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+>>>>>>> aaa427f3e3eb0b3aae9448729ba2979e85f2f5ab
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -63,10 +80,17 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
+<<<<<<< HEAD
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
+=======
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+>>>>>>> aaa427f3e3eb0b3aae9448729ba2979e85f2f5ab
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -75,7 +99,11 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
+<<<<<<< HEAD
 bindsym $mod+semicolon split h
+=======
+bindsym $mod+h split h
+>>>>>>> aaa427f3e3eb0b3aae9448729ba2979e85f2f5ab
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -165,8 +193,11 @@ bar {
 
 #set background
 exec feh --bg-scale /home/ray/Pictures/wallpapers/lillypondfix1.jpg 
+<<<<<<< HEAD
 
 #gaps
 gaps inner 35 
 gaps outer 0
 for_window [class=".*"] border pixel 0
+=======
+>>>>>>> aaa427f3e3eb0b3aae9448729ba2979e85f2f5ab
